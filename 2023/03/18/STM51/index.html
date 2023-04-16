@@ -126,6 +126,22 @@
                                 
                             </li>
                     
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/Author"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        AUTHOR
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
                     
                 </ul>
             </div>
@@ -152,6 +168,21 @@
                                     <i class="fa-regular fa-house"></i>
                                 
                                 首页
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/Author"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                AUTHOR
                             
                         </a>
                     </li>
@@ -210,8 +241,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-18 17:58:21</span>
-            <span class="mobile">2023-03-18 17:58</span>
+            <span class="pc">2023-04-02 15:21:13</span>
+            <span class="mobile">2023-04-02 15:21</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -246,11 +277,7 @@
             
 
             <div class="article-content markdown-body">
-                <h1 id="51单片机学习笔记"><a href="#51单片机学习笔记" class="headerlink" title=" 51单片机学习笔记"></a><center> 51单片机学习笔记</center></h1><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="type">unsigned</span> <span class="type">int</span> u16;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">unsigned</span> <span class="type">char</span> u8;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-
-
-<h2 id="1-LED灯的控制"><a href="#1-LED灯的控制" class="headerlink" title="1.LED灯的控制"></a>1.LED灯的控制</h2><table>
+                <h1 id="51单片机学习笔记"><a href="#51单片机学习笔记" class="headerlink" title=" 51单片机学习笔记"></a><center> 51单片机学习笔记</center></h1><h2 id="1-LED灯的控制"><a href="#1-LED灯的控制" class="headerlink" title="1.LED灯的控制"></a>1.LED灯的控制</h2><table>
 <thead>
 <tr>
 <th align="center">LED编号</th>
@@ -279,7 +306,7 @@
 <p>“1”指高电平  LED灯灭<br>“0”指低电平 LED灯亮</p>
 <blockquote>
 <p>头文件</p>
-<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="meta">#<span class="keyword">include</span> <span class="string">&quot;reg52.h&quot;</span></span></span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment">//可以合成为51.h</span></span><br><span class="line">&gt;<span class="meta">#<span class="keyword">include</span> <span class="string">&quot;reg52.h&quot;</span></span></span><br><span class="line">&gt;<span class="meta">#<span class="keyword">include</span> <span class="string">&quot;intrins.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">typedef</span> <span class="type">unsigned</span> <span class="type">int</span> u16;</span><br><span class="line">&gt;<span class="keyword">typedef</span> <span class="type">unsigned</span> <span class="type">char</span> u8;</span><br></pre></td></tr></table></figure></div>
 
 <p>控制LED的基础</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment">//方法一 (一个个控制)</span></span><br><span class="line">&gt;sbit D1 = P2^<span class="number">0</span></span><br><span class="line">&gt;sbit D2 = P2^<span class="number">1</span></span><br><span class="line">&gt;.....</span><br><span class="line">&gt;<span class="comment">//D1与D2可以更改</span></span><br><span class="line">&gt;<span class="type">void</span> main()&#123;</span><br><span class="line">&gt;<span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">&gt;D1 = <span class="number">1</span> ; <span class="comment">//D1灭</span></span><br><span class="line">&gt;D2 = <span class="number">0</span> ; <span class="comment">//D2亮</span></span><br><span class="line">&gt;.....</span><br><span class="line">&gt;&#125;</span><br><span class="line">&gt;&#125;</span><br></pre></td></tr></table></figure></div>
@@ -332,11 +359,11 @@
 <pre><code>Answer 2:
 </code></pre>
 <blockquote>
-<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&gt;Method <span class="number">1</span>:</span><br><span class="line">&gt;<span class="comment">//纯肉手打(不推荐)</span></span><br><span class="line">&gt;<span class="type">void</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line"><span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">	LED_PORT= <span class="number">0xff</span>; <span class="comment">//BIN:11111111</span></span><br><span class="line">  delay_10us(<span class="number">50000</span>);</span><br><span class="line">  LED_PORT= <span class="number">0xfe</span>  <span class="comment">//BIN:11111110</span></span><br><span class="line">  delay_10us(<span class="number">50000</span>);</span><br><span class="line">  LED_PORT= <span class="number">0xfd</span>  <span class="comment">//BIN:11111101</span></span><br><span class="line">  delay_10us(<span class="number">50000</span>);</span><br><span class="line">  LED_PORT= <span class="number">0xfb</span>  <span class="comment">//BIN:11111011</span></span><br><span class="line">  delay_10us(<span class="number">50000</span>);</span><br><span class="line">  ......</span><br><span class="line">&#125;</span><br><span class="line">&gt;&#125;  </span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&gt;Method <span class="number">1</span>:</span><br><span class="line">&gt;<span class="comment">//纯肉手打(不推荐)</span></span><br><span class="line">&gt;<span class="type">void</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line"><span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">	LED_PORT= <span class="number">0xff</span>; <span class="comment">//BIN:11111111</span></span><br><span class="line">&gt;delay_10us(<span class="number">50000</span>);</span><br><span class="line">&gt;LED_PORT= <span class="number">0xfe</span>  <span class="comment">//BIN:11111110</span></span><br><span class="line">&gt;delay_10us(<span class="number">50000</span>);</span><br><span class="line">&gt;LED_PORT= <span class="number">0xfd</span>  <span class="comment">//BIN:11111101</span></span><br><span class="line">&gt;delay_10us(<span class="number">50000</span>);</span><br><span class="line">&gt;LED_PORT= <span class="number">0xfb</span>  <span class="comment">//BIN:11111011</span></span><br><span class="line">&gt;delay_10us(<span class="number">50000</span>);</span><br><span class="line">&gt;......</span><br><span class="line">&#125;</span><br><span class="line">&gt;&#125; </span><br></pre></td></tr></table></figure></div>
 
-
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&gt;Method <span class="number">2</span>:</span><br><span class="line">&gt;<span class="type">void</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&gt;&#123;</span><br><span class="line">   	u8 i=<span class="number">0</span>;</span><br><span class="line">   	LED_PORT=~<span class="number">0x01</span>; <span class="comment">//LED_PORT=0xFE;</span></span><br><span class="line">   	delay_10us(<span class="number">5000</span>);</span><br><span class="line">   	<span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">	<span class="keyword">while</span>(i&lt;<span class="number">7</span>)&#123;</span><br><span class="line">    	       LED_PORT=_crol_(LED_PORT,<span class="number">1</span>);<span class="comment">//LEFT</span></span><br><span class="line">    	       delay_10us(<span class="number">5000</span>);</span><br><span class="line">    	       i++;</span><br><span class="line">    		&#125;</span><br><span class="line">       		<span class="keyword">while</span>(i&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">           		LED_PORT=_cror_(LED_PORT,<span class="number">1</span>);<span class="comment">//RIGHT</span></span><br><span class="line">           		delay_10us(<span class="number">5000</span>);</span><br><span class="line">           		i--;</span><br><span class="line">       		&#125;</span><br><span class="line">  	&#125;     </span><br><span class="line">&gt;&#125;</span><br></pre></td></tr></table></figure></div>
 </blockquote>
-
+<h2 id="2-蜂鸣器的使用"><a href="#2-蜂鸣器的使用" class="headerlink" title="2.蜂鸣器的使用"></a>2.蜂鸣器的使用</h2>
             </div>
 
             
@@ -417,7 +444,7 @@
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">STM51</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#51%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="nav-text"> 51单片机学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E6%8F%90"><span class="nav-text">前提</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-LED%E7%81%AF%E7%9A%84%E6%8E%A7%E5%88%B6"><span class="nav-text">1.LED灯的控制</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#51%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="nav-text"> 51单片机学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-LED%E7%81%AF%E7%9A%84%E6%8E%A7%E5%88%B6"><span class="nav-text">1.LED灯的控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%9C%82%E9%B8%A3%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">2.蜂鸣器的使用</span></a></li></ol></li></ol>
 
     </div>
 </div>

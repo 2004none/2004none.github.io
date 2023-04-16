@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="还在学习coding的孩子">
+    <meta name="author" content="KangWang">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2023/04/16/the useful commands of cmd/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The useful commands of cmd">
+    <meta property="og:description" content="还在学习coding的孩子">
+    <meta property="og:url" content="http://example.com2023/04/16/The useful commands of cmd/">
+    
+    <meta property="og:site_name" content="KangWang&#39;s Blog">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The useful commands of cmd">
+    <meta name="twitter:description" content="还在学习coding的孩子">
+    <meta name="twitter:image" content="/images/k.svg">
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/k.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/k.svg">
+    <meta name="theme-color" content="rgb(164,172,167)">
+    <link rel="shortcut icon" href="/images/k.svg">
+    
+    <title>
+        
+            The useful commands of cmd -
+        
+        KangWang&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/assets/fonts.css">
+
+    
+    
+    
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"rgb(164,172,167)","avatar":"/images/my.jpg","favicon":"/images/k.svg","og_image":{"enable":false,"image_url":null},"article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"rgb(32, 32, 32)","right":"rgb(32, 32, 32)","transparency":40},"hover":{"shadow":true,"scale":"ture"},"first_screen":{"enable":true,"background_image":{"light":"https://baotangguo.cn:8081/","dark":"http://47.115.215.252:9999/pic/2.html"},"title_color":{"light":"rgb(254, 255, 197)","dark":"rgb(201, 201, 204)"},"description":"KangWang's Blog","custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.2.0","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":false,"audio":[{"name":null,"artist":null,"url":null,"cover":null},{"name":null,"artist":null,"url":null,"cover":null}]}}};
+    REDEFINE.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
+    
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="menu-wrapper">
+    
+    <div class="menu-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                KangWang&#39;s Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        首页
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/Author"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        AUTHOR
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="menu-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                首页
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/Author"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                AUTHOR
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular">The useful commands of cmd</h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/my.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">KangWang</span>
+                            
+                                <span class="author-label">lol</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2023-04-16 23:17:01</span>
+        <span class="mobile">2023-04-16 23:17</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="pc">2023-04-16 23:21:02</span>
+            <span class="mobile">2023-04-16 23:21</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/bash/">bash</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="The-useful-CMD-commands"><a href="#The-useful-CMD-commands" class="headerlink" title="The useful CMD commands"></a>The useful CMD commands</h1><blockquote>
+<p> CMD is a command program of Windows</p>
+<p> Make good use CMD can help us achieve advanced works</p>
+<blockquote>
+<p>waring : This tutorial is written by Kang wang </p>
+<p>​				The Language is English </p>
+<p>​				(I have not checked the grammar .If there is  something wrong ,pls tell me to correct it .) </p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>Tips:</p>
+<p>The “[content]” is not necessary</p>
+<p>if you can not sure the methods of commands ,you can get help by</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;[<span class="built_in">command</span>] /?</span><br><span class="line">&gt;<span class="comment">#example:</span></span><br><span class="line">&gt;&gt;pause /?</span><br><span class="line">&gt;Suspends processing of a batch program and displays the message</span><br><span class="line">&gt;Press any key to <span class="built_in">continue</span> . . .</span><br></pre></td></tr></table></figure></div>
+
+<p>if you do not know any commands ,you can find some useful commands by</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;D:/&gt;<span class="built_in">help</span></span><br></pre></td></tr></table></figure></div>
+<details>
+<summary>example</summary>
+<pre><code>
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+              current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+              creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+              differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+              associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+              a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+              graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+              directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+              directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+              PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+              path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+              correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+For more information on tools see the command-line reference in the online help.
+</code></pre>
+</details>
+</blockquote>
+<h3 id="Start-CMD"><a href="#Start-CMD" class="headerlink" title="Start CMD"></a>Start CMD</h3><blockquote>
+<ul>
+<li><p>Press Ctrl + R </p>
+</li>
+<li><p>Input ‘cmd’</p>
+</li>
+<li><p>Press Enter</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="Path"><a href="#Path" class="headerlink" title="Path"></a>Path</h3><blockquote>
+<p>There are so many  commands which are as same as bash</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment">#The same part</span></span><br><span class="line">&gt;<span class="comment"># Move to other disk</span></span><br><span class="line">&gt;C:/user/username&gt;D:		<span class="comment">#move to disk D</span></span><br><span class="line">&gt;D:/&gt;</span><br><span class="line">&gt;<span class="comment">#Move to dir</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">cd</span> mydir			<span class="comment">#move to the dir named &quot;mydir&quot;</span></span><br><span class="line">&gt;D:/mydir&gt;</span><br><span class="line">&gt;<span class="comment">#Back to the previous dir</span></span><br><span class="line">&gt;D:/mydir&gt;<span class="built_in">cd</span> ..</span><br><span class="line">&gt;D:/&gt;</span><br><span class="line">&gt;<span class="comment">#The different part</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">cd</span> C:</span><br><span class="line">&gt;C:/ 	<span class="comment">#This path is the route that you ever been to or use command attempt to go</span></span><br><span class="line">&gt;D:&gt;</span><br></pre></td></tr></table></figure></div>
+
+
+</blockquote>
+<h3 id="Dir-amp-Files"><a href="#Dir-amp-Files" class="headerlink" title="Dir &amp; Files"></a>Dir &amp; Files</h3><blockquote>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment">#list the files in the dir</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">dir</span> [path]</span><br><span class="line">&gt;...</span><br><span class="line">&gt;YYYY/MM/DD  HH:MM    &lt;DIR&gt;          <span class="built_in">dirname</span></span><br><span class="line">&gt;YYYY/MM/DD  HH:MM          filesize filename.extension</span><br><span class="line">&gt;...</span><br><span class="line">&gt;<span class="comment">#list the tree structure </span></span><br><span class="line">&gt;D:/&gt;tree [<span class="built_in">dirname</span>(path)]</span><br><span class="line"></span><br><span class="line">&gt;<span class="comment">#New a dir</span></span><br><span class="line">&gt;D:/&gt;md <span class="built_in">dirname</span></span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment">#Preview the content of specify file</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">type</span> filename.extension</span><br><span class="line">&gt;example:</span><br><span class="line">&gt;D:/&gt;<span class="built_in">type</span> helloworld.txt</span><br><span class="line">&gt;Helloworld</span><br><span class="line"></span><br><span class="line">&gt;<span class="comment">#Make files</span></span><br><span class="line">&gt;<span class="comment">#Method 1</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">echo</span> Content [1]&gt; filename.extension <span class="comment">#new a file with Content</span></span><br><span class="line">&gt;----</span><br><span class="line">&gt;D:/&gt;<span class="built_in">echo</span> Helloworld &gt; Helloworld.txt</span><br><span class="line">&gt;D:/&gt;<span class="built_in">type</span> Helloworld.txt</span><br><span class="line">&gt;Helloworld</span><br><span class="line">&gt;----</span><br><span class="line">&gt;D:/&gt;<span class="built_in">echo</span> [Content] 2&gt; 1.txt <span class="comment">#new a file with NULL</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">type</span> 1.txt</span><br><span class="line"></span><br><span class="line">&gt;<span class="comment">#Method 2</span></span><br><span class="line">&gt;D:/&gt;copy [con] filename.extension  <span class="comment">#new a file and edit its content </span></span><br><span class="line">&gt;<span class="comment"># Press Ctrl + C to exit while save</span></span><br><span class="line"></span><br><span class="line">&gt;D:/&gt;copy nul filename.extension  <span class="comment">#new a file with NULL</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="comment">#Revise Or Modify the file</span></span><br><span class="line">&gt;D:/&gt;notepad filename.extension <span class="comment">#Use the notepad to revise the content of specify file</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">echo</span> content &gt; filename.extension <span class="comment">#Modify the content of specify file and delete the origin infor</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">echo</span> content &gt;&gt; filename.extension <span class="comment">#Add the content on the tail</span></span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h3><blockquote>
+<p>You can get all information about your devices’ network via the command “netsh”</p>
+<p>if you want know more about ‘netsh’ via <a class="link"   target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-server/networking/technologies/netsh/netsh" >Network Shell (Netsh) | Microsoft Learn <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>if you wang to know the SSID of  Wlan that you connected , you can use this command:</p>
+<blockquote>
+<p>netsh wlan show interfaces | findstr &#x2F;c:”SSID”</p>
+</blockquote>
+<p>if you want to find your ipv4 address ,you can just use this command:</p>
+<blockquote>
+<p>netsh interface ipv4 show ipaddress interface</p>
+</blockquote>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment"># Test the situation of network </span></span><br><span class="line">&gt;D:/&gt;ping [ip address / domain] [-n number] [-w number]</span><br><span class="line">&gt;<span class="comment"># The number after &#x27;-n&#x27; means times of ping</span></span><br><span class="line">&gt;<span class="comment"># The number after &#x27;-w&#x27; means time of each ping</span></span><br><span class="line">&gt;example:</span><br><span class="line">&gt;D:/&gt;ping 8.8.8.8 		<span class="comment"># Test the connection with 8.8.8.8</span></span><br><span class="line">&gt;D:/&gt;ping baidu.com		<span class="comment"># Test the connection with baidu.com</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="comment">#Get my ipaddress</span></span><br><span class="line">&gt;D:/&gt;ipconfig</span><br><span class="line">&gt;<span class="comment">#Clean the cache of local DNS </span></span><br><span class="line">&gt;D:/&gt;ipconfig /flushdns</span><br><span class="line">&gt;<span class="comment">#Trace tracert </span></span><br><span class="line">&gt;D:/&gt;tracert [ip/domain]</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="Process"><a href="#Process" class="headerlink" title="Process"></a>Process</h3><blockquote>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment"># Task Manage </span></span><br><span class="line">&gt;D:/&gt;taskmgr		<span class="comment">#Open a GUI program called &#x27;TaskManager&#x27;</span></span><br><span class="line">&gt;D:/&gt;tasklist	<span class="comment">#print all task as list</span></span><br><span class="line">&gt;D:/&gt;start Programname <span class="comment">#Start the Program</span></span><br><span class="line">&gt;D:/&gt;Programname 	<span class="comment">#Start Program</span></span><br><span class="line">&gt;D:/&gt;taskkill /PID PIDnumber <span class="comment">#kill task via PID</span></span><br><span class="line">&gt;D:/&gt;taskkill /IM taskname	 <span class="comment">#kill task via taskname</span></span><br><span class="line">&gt;D:/&gt;<span class="built_in">kill</span> [PID]	<span class="comment">#kill task via PID</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="comment">#Sevice Manage</span></span><br><span class="line">&gt;D:/&gt;net start	<span class="comment">#print all service as list </span></span><br><span class="line">&gt;D:/&gt;net start servicename	<span class="comment">#Run specify service</span></span><br><span class="line">&gt;D:/&gt;net stop servicename	<span class="comment">#Stop specify service</span></span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="Shutdown"><a href="#Shutdown" class="headerlink" title="Shutdown"></a>Shutdown</h3><blockquote>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;D:/&gt;shutdown /s <span class="comment">#shutdown</span></span><br><span class="line">&gt;D:/&gt;shutdown /r <span class="comment">#reboot</span></span><br><span class="line">&gt;D:/&gt;shutdown /l <span class="comment">#login out</span></span><br><span class="line">&gt;D:/&gt;shutdown /h /f <span class="comment">#sleep</span></span><br><span class="line">&gt;D:/&gt;shutdown /a <span class="comment">#cancel</span></span><br><span class="line">&gt;D:/&gt;shutdown /s /t secondnumber <span class="comment">#After a few second to shutdown</span></span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="Bat"><a href="#Bat" class="headerlink" title=".Bat"></a>.Bat</h3><blockquote>
+<ul>
+<li>New a txt file</li>
+<li>input the first command</li>
+<li>Enter (Line Break)</li>
+<li>input the second command</li>
+<li>save the file</li>
+<li>rename as filename.bat</li>
+<li>double click to run bat</li>
+</ul>
+</blockquote>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：The useful commands of cmd</li>
+        <li>本文作者：KangWang</li>
+        <li>创建时间：2023-04-16 23:17:01</li>
+        <li>
+            本文链接：https://2004none.github.io/2023/04/16/The useful commands of cmd/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/bash/">#bash</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/03/21/DIgital%20article/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">Digital Article</span>
+                                    <span class="post-nav-item">下一篇</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">The useful commands of cmd</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#The-useful-CMD-commands"><span class="nav-text">The useful CMD commands</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Start-CMD"><span class="nav-text">Start CMD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Path"><span class="nav-text">Path</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dir-amp-Files"><span class="nav-text">Dir &amp; Files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Network"><span class="nav-text">Network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Process"><span class="nav-text">Process</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shutdown"><span class="nav-text">Shutdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bat"><span class="nav-text">.Bat</span></a></li></ol></li></ol></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">KangWang</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br> 
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.2.0</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2022/8/17 11:45:14
+            </div>
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="unfolded-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="folded-tools-list">
+        <li class="right-bottom-tools tool-toggle-show flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/layouts/menu-shrink.js"></script>
+
+<script src="/js/tools/go-top-bottom.js"></script>
+
+<script src="/js/tools/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/tools/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/tools/toc-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/layouts/toc.js"></script>
+
+<script src="/js/plugins/tabs.js"></script>
+
+    
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
